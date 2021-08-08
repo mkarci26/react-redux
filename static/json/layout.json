@@ -1,0 +1,6 @@
+{
+    "logo": "http://localhost:8080/img/logo.png",
+	"siteTitle": "React Redux",
+	"copyRight": "Copyrights @ 2021",
+    "banner": false
+}
