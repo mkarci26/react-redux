@@ -1,0 +1,145 @@
+{"categories": [
+    {
+      "topic": "Indoor Plants",
+      "products": [
+          {
+            "id": 1, 
+            "name": "plant A",
+            "photo": "http://localhost:8080/img/plant1.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 2,
+            "name": "plant B",
+            "photo": "http://localhost:8080/img/plant2.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 3,
+            "name": "plant C",
+            "photo": "http://localhost:8080/img/plant3.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 4,
+            "name": "plant D",
+            "photo": "http://localhost:8080/img/plant4.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 5,
+            "name": "plant E",
+            "photo": "http://localhost:8080/img/plant5.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 6,
+            "name": "plant F",
+            "photo": "http://localhost:8080/img/plant6.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 7,
+            "name": "plant G",
+            "photo": "http://localhost:8080/img/plant7.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          }
+       ]
+    },
+    {
+      "topic": "Succulent Plants",
+      "products": [
+          { "id": 8,
+            "name": "plant H",
+            "photo": "http://localhost:8080/img/plant8.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 9,
+            "name": "plant I",
+            "photo": "http://localhost:8080/img/plant9.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 10,
+            "name": "plant J",
+            "photo": "http://localhost:8080/img/plant10.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 11,
+            "name": "plant K",
+            "photo": "http://localhost:8080/img/plant11.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 12,
+            "name": "plant L",
+            "photo": "http://localhost:8080/img/plant12.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 13,
+            "name": "plant M",
+            "photo": "http://localhost:8080/img/plant13.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 14,
+            "name": "plant N",
+            "photo": "http://localhost:8080/img/plant14.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          }
+       ]
+    },
+    {
+      "topic": "Blossoms & Climbers",
+      "products": [
+          { "id": 15,
+            "name": "plant O",
+            "photo": "http://localhost:8080/img/plant15.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 16,
+            "name": "plant P",
+            "photo": "http://localhost:8080/img/plant16.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 17,
+            "name": "plant Q",
+            "photo": "http://localhost:8080/img/plant17.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 18,
+            "name": "plant R",
+            "photo": "http://localhost:8080/img/plant18.jpg",
+            "text": "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+            "price": 10.36
+          },
+          { "id": 19,
+            "name": "plant S",
+            "photo": "http://localhost:8080/img/plant19.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 20,
+            "name": "plant T",
+            "photo": "http://localhost:8080/img/plant20.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          },
+          { "id": 21,
+            "name": "plant U",
+            "photo": "http://localhost:8080/img/plant21.jpg",
+            "text": " harum quidem rerum facilis est et expedita distinctio",
+            "price": 10.36
+          }
+       ]
+    }
+  ]
+}

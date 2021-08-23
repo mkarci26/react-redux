@@ -3,7 +3,6 @@ import React, {Fragment, Component} from 'react';
 class Footer extends Component {
   constructor(props) {
     super(props)
-    console.log(this.props)
     this.state = {
       layout: this.props.layout
     }
@@ -20,7 +19,7 @@ class Footer extends Component {
     
     return (
       <Fragment>
-        <footer>
+        <footer className="bg">
             <div className="container">
               {layout.copyRight}
             </div>

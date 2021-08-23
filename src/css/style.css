@@ -3,16 +3,23 @@ body {
   overflow-x: hidden;
   font-family: 'Quicksand', sans-serif;
   color: #302e2e;
+  background: radial-gradient(circle, rgba(254,254,254,1) 21%, rgba(215,221,222,1) 100%);
+  
+  
 }
 
 /* Navigation */
+.lightcol{
+  background: #f4f6f7;
+  
+}
 .brand {
   margin-right: 100px;
 
 }
 
 .navbar-brand {
-  color: #798e03 !important;
+  color: #3f1501 !important;
 }
 
 .navbar-brand img {
@@ -75,16 +82,24 @@ body {
 }
 
 .textcol {
-  color: coral;
+  color:#A6CB12;
 }
 
 .btn-custom1 {
-  background-color: coral;
+  background-color:#3f1501;
   color: cornsilk;
   border: none;
 }
 
 /*card section*/
+
+.price{
+  color:#3f1501;
+}
+.desc{
+  color: #50C9BA;
+}
+/* #260C1A; */
 .mycard {
   border: none;
 }
@@ -109,6 +124,23 @@ body {
   color: #A5E1AD;
 }
 
+.size{
+  width: 250px;
+  height: 300px;
+  
+}
+
+.bg{
+  background: #f4f6f7;
+}
+
+/* cart */
+
+.pic{
+  width: 125px;
+  height: 125px;
+}
+
 /* footer */
 
 .error {
@@ -116,7 +148,7 @@ body {
 }
 
 .textcolour {
-  color: coral;
+  color: #1F441E;
 }
 
 .myline {
@@ -150,7 +182,7 @@ body {
 .section-title .title {
 
   font-weight: 500;
-  color: coral;
+  color: #444941;
   line-height: 55px;
 }
 
@@ -383,3 +415,5 @@ body {
 .site-tile {
   display: flex;
 }
+
+ 

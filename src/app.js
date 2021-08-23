@@ -4,9 +4,14 @@ import { bindActionCreators } from 'redux';
 import layoutRedux from './reducers/home'
 import Header from './shared/header'
 import Footer from './shared/footer'
-//import { Route, Switch } from 'react-router-dom';
+import Landing from './components/landing';
+import Product from './components/product';
+import Shop from './components/shop';
+import Cart from './components/cart'
+import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
+
 
 const actions = {...layoutRedux.actions};
 
@@ -30,16 +35,17 @@ class App extends React.Component {
 
   render() {
     const {layout} = this.state
-    console.log(layout)
     return (
       <Fragment>
         <Header layout={layout} />
-        {/*<Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-        </Switch>*/}
         
+         <Switch>
+            <Route  exact path="/" component={Landing}/>
+            <Route path="/product/:productId" component={Product} />
+            <Route path="/shop" component={Shop} /> 
+            <Route path="/cart" component={Cart}/>
+        </Switch>
+         
         
         <Footer layout={layout} />
       </Fragment>

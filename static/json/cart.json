@@ -1,0 +1,17 @@
+[
+{
+  "id": 1,
+  "name":"plant A",
+  "photo": "http://localhost:8080/img/plant1.jpg",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sapiente est cupiditate praesentium officia voluptatibus quas ratione quaerat commodi voluptas ut!est et expedita distinctio",
+  "price": 10.36
+
+},
+{
+  "id": 2,
+  "name":"plant B",
+  "photo": "http://localhost:8080/img/plant2.jpg",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sapiente est cupiditate praesentium officia voluptatibus quas ratione quaerat commodi voluptas ut!est et expedita distinctio",
+  "price": 10.36
+}
+]

@@ -1,6 +1,10 @@
 {
     "logo": "http://localhost:8080/img/logo.png",
-	"siteTitle": "React Redux",
+	"siteTitle": "LEAF LOVE",
 	"copyRight": "Copyrights @ 2021",
-    "banner": false
+    "banner": false,
+    "menu":[
+        {"name":"Shop", "url": "shop"},
+        {"name":"Cart", "url": "cart"}
+    ]
 }
