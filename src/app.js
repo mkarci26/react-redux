@@ -9,6 +9,7 @@ import Product from './components/product';
 import Shop from './components/shop';
 import Cart from './components/cart'
 import { Route, Switch } from 'react-router-dom';
+import ReactSnackBar from "react-js-snackbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 
@@ -30,14 +31,21 @@ class App extends React.Component {
   componentDidUpdate(prevProps) {
     if (prevProps.layout !== this.props.layout) {
         this.setState({layout: this.props.layout})
+
+      if (this.props.layout.openSnackbar === true) {
+        setTimeout(() => {
+          this.props.closeSnackbar()
+        }, 3000)
+      }
     }
   }
 
   render() {
     const {layout} = this.state
+    const {cart} = this.props
     return (
       <Fragment>
-        <Header layout={layout} />
+        <Header layout={layout} cart={cart}/>
         
          <Switch>
             <Route  exact path="/" component={Landing}/>
@@ -48,6 +56,11 @@ class App extends React.Component {
          
         
         <Footer layout={layout} />
+
+        
+        <ReactSnackBar Icon={<span role="img" aria-label="Notify">⏳</span>} Show={layout.openSnackbar}>
+          {layout.snackMsg}
+        </ReactSnackBar>
       </Fragment>
     );
   }
@@ -57,7 +70,8 @@ class App extends React.Component {
 export default connect(
     state => {
         return {
-            layout: state.home.layout
+            layout: state.home,
+            cart: state.cart.data
         };
     }, dispatch => {
         return bindActionCreators(actions, dispatch)

@@ -16,18 +16,17 @@ class Header extends Component {
   }
 
   render() {
-    const {layout} = this.state;
+    const {layout, cart} = this.state;
     
     return (
-      
       <Fragment>
         <header>
             <nav className="navbar  lightcol navbar-light navbar-expand-lg">
                 <div className="container">
-                    <a href="#/" className="navbar-brand brand site-tile">
-                        <img src={layout.logo} className=" mr-1" alt="logo" title="logo" />
-                        {layout.siteTitle}
-                    </a>
+                  <a href="#/" className="navbar-brand brand site-tile">
+                      <img src={layout.logo} className=" mr-1" alt="logo" title="logo" />
+                      {layout.siteTitle}
+                  </a>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                   <ul className="navbar-nav ml-auto">
@@ -38,7 +37,14 @@ class Header extends Component {
                         </li>
                       )}
                     )}
-                  
+                    <li>
+                    <button type="button" className="btn btn-primary position-relative mt-2" onClick={e =>  window.location.href='#/cart'}>
+                      Cart 
+                      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        {cart.length > 0 ? cart.length : ''}
+                      </span>
+                    </button>
+                    </li>
                   </ul>
               </div>
             </nav>

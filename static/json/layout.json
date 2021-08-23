@@ -4,7 +4,6 @@
 	"copyRight": "Copyrights @ 2021",
     "banner": false,
     "menu":[
-        {"name":"Shop", "url": "shop"},
-        {"name":"Cart", "url": "cart"}
+        {"name":"Shop", "url": "shop"}
     ]
 }

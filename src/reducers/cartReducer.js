@@ -1,7 +1,4 @@
 import { createAction, handleActions } from "redux-actions";
-import { handle } from "redux-pack";
-import axios from "axios";
-import config from '../config.js'
 
 const ADD_CART = 'ADD_CART'
 const addToCart = createAction(ADD_CART)

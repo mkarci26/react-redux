@@ -41,33 +41,30 @@ class Shop extends Component {
               <div className="container-fluid">
                 <div className="container">
                   <div className="col-md-12">
-                      <h3 className=" text-uppercase text-center textcolour mt-4">{category.topic}</h3>
+                    <h3 className=" text-uppercase text-center textcolour mt-4">{category.topic}</h3>
                   </div>
-          <div className="row">
-            {category.products && category.products.map((product, i) => {     
-              return (
-                <div key={product.name+product.id} className="col-lg-3 col-md-3 col-12 ">
-                  <div className="card  bg  mycard mt-5">
-                    <div className="card-body" >
-                      <img className="image-fluid size w-100 mb-2" src={product.photo} alt={product.name}/>
-                        <h5 className="card-title text-left desc text-capitalize">{product.name}</h5>
-                        <p className="card-text  text-justify">{product.text}</p>
-                        <button type="button" className="btn btn-info btn-custom1" onClick={e=> this.navigateProduct(e, product.id)}>View Detail</button>
-                    </div>
+                  <div className="row">
+                    {category.products && category.products.map((product, i) => {     
+                      return (
+                        <div key={product.name+product.id} className="col-lg-3 col-md-3 col-12 ">
+                          <div className="card  bg  mycard mt-5">
+                            <div className="card-body" >
+                              <img className="image-fluid size w-100 mb-2" src={product.photo} alt={product.name}/>
+                                <h5 className="card-title text-left desc text-capitalize">{product.name}</h5>
+                                <p className="card-text  text-justify">{product.text}</p>
+                                <button type="button" className="btn btn-info btn-custom1" onClick={e=> this.navigateProduct(e, product.id)}>View Detail</button>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    )}
                   </div>
                 </div>
-              )}
-            )}
-            
-          </div>
-        </div>
-      </div> 
+              </div> 
             </section>
           ) 
         })}
-
       </Fragment>
-      
     )}
     </Fragment>
   )

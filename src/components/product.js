@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import productRedux from '../reducers/productReducer';
 import cartRedux from '../reducers/cartReducer';
+import layoutRedux from '../reducers/home'
 
-const actions = {...productRedux.actions, ...cartRedux.actions}
+const actions = {...productRedux.actions, ...cartRedux.actions, ...layoutRedux.actions}
 
 
 class Product extends Component {
@@ -12,7 +13,8 @@ class Product extends Component {
     super(props)
     this.state = {
       productId: this.props.match.params.productId,
-      product: {}
+      product: {},
+      disableButton: false
     }
     this.addToCart = this.addToCart.bind(this)
   }
@@ -30,14 +32,16 @@ class Product extends Component {
   addToCart(e, product) {
     e.stopPropagation()
     this.props.addCart(product)
+    this.props.openSnackbar('Item Added to Cart')
+    this.setState({disableButton: true})
   }
 
   render() {
-    const {product} = this.state
+    const {product, disableButton} = this.state
       return(
-         <Fragment>
-           {product && (
-           <div className="container">
+        <Fragment>
+          {product && (
+            <div className="container">
             <div className=" row my-5 ">
               <div className="col-md-12 ">
                <div className="row">
@@ -46,34 +50,31 @@ class Product extends Component {
                    alt=""/>
                 </div>
 
-               <div className="rounded-right col-md-6 detail bg-dange pb-5">
-                 <div className=" text-center mt-5">
+                <div className="rounded-right col-md-6 detail bg-dange pb-5">
+                  <div className=" text-center mt-5">
 	                 <h2 className="textcolour">{product.name}</h2>
-	               </div> 
+	                </div> 
                   <div className="py-5 px-4">
 	                  <p>{product.text} </p>
 	                </div> 
 	
-	            <div className="text-center mt-4 price">
-            
- 	              <h3>{"Price: " + product.price}</h3>    		
-            
+                  <div className="text-center mt-4 price">
+                    <h3>{"Price: " + product.price}</h3>    
+                  </div>
+                  <div className="text-center mt-4">
+                    <button disable={disableButton} type="button" className="btn btn-info btn-custom1" onClick={e=> this.addToCart(e, product)}>Add To Cart</button>
+                  </div>
                 </div>
-                <div className="text-center mt-4">
-                <button type="button" className="btn btn-info btn-custom1" onClick={e=> this.addToCart(e, product)}>Add To Cart</button>
-                </div>
-
+              </div>
+            </div>
+          </div>
         </div>
-</div>
-</div>
-</div>
-</div>
-          )}
-          {!product && (
-            <div>Loading...</div>
-          )}
-         </Fragment>
-      )
+        )}
+      {!product && (
+        <div>Loading...</div>
+      )}
+      </Fragment>
+    )
   }
 
 }
